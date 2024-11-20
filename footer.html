@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="footer">
+        
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <title>Bottom Bar Example</title>
+</head>
+<body>
+    <!-- Main Content Here -->
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+        <p>This is a notification or message at the bottom of the page. <a href="#">Learn more</a></p>
+        <button class="close-btn">&times;</button>
+    </div>
+
+    <script>
+        // Close button functionality
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            document.querySelector('.bottom-bar').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

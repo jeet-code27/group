@@ -1,0 +1,60 @@
+/* #footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+.bottom-bar p {
+    margin: 0;
+    color: #ddd;
+}
+
+.bottom-bar a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-bar a:hover {
+    color: #fff;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}

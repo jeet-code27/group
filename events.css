@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#header{
+    background-color: rgb(250, 246, 246);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+     position: relative;*/
+}
+.logo{
+
+    margin-left: 40px;
+    /*height: 100px; */
+    /* position: absolute; */
+}
+.selector{
+    width: 350px;
+}
+
+#selectfield{
+    /* position: relative; */
+    width: 130px;
+    padding: 13px 17px;
+    margin-top: 190px;
+    margin-left: 50px;
+    background: rgb(245, 109, 55);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#selectfield img{
+    /* display: flex; */
+    width: 12px;
+
+}
+
+.dropbtn {
+    background-color: rgba(243, 111, 40, 0.4);
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    width: 120px;
+    height: 50px;
+    margin-left: 40px;
+    font-size: 16px;
+    /* border: none; */
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid brown;
+  }
+  .dropbtn img{
+    margin-top: 1px;
+   width: 15px;
+   height: 15px;
+   margin-left: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 193, 163);
+    width: 300px;
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 50px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    margin-left: 110px;
+    padding: 17px 20px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+  }
+  .dropdown-content img{
+    position: absolute;
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+ 
+  .show {display: block;}
+
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 400px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  li a:hover{
+    color: rgb(189, 85, 44);
+  }
+  .resister{
+    /* position: relative; */
+    width: 110px;
+    padding: 10px 17px;
+    color: brown;
+    outline: auto;
+    margin-left: 40px;
+    background: rgba(221, 212, 208, 0.7);
+    border-radius: 6px;
+    border: 1px solid rgba(226, 96, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* Main Content Styling */
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.center-element {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.center-element > h4 {
+    font-weight: lighter;
+}
+
+/* Toolbar Styling */
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards ease; /* Fade-in effect */
+}
+
+/* Keyframe for Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styling with Hover and Scale */
+.filter-button {
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: white;
+    color: rgb(241, 86, 25);
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Scale effect */
+}
+
+.filter-button:hover {
+    background-color: rgb(241, 86, 25);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Search Bar Styling with Focus Effect */
+.search-bar {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 150px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Scale and shadow on focus */
+}
+
+.search-bar:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    .toolbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+.event-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.date-box .date {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.date-box .month {
+    color: #e63946;
+    font-weight: 500;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.event-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.event-details .type {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.event-details .time {
+    color: #888;
+}
+
+.watch-btn {
+    padding: 5px 10px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.participants {
+    color: #888;
+}
+
+.speaker-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    margin: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ddd;
+  }
+  
+  .footer-note {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+  }
+  #footer{
+    background: rgba(56, 2, 65);
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    font-family: sans-serif;
+}
+#footer img{
+    margin-top: 60px;
+    margin-left: 120px;
+}
+.footernav ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 255px;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  
+ .footernav li a {
+    font-size: 18px;
+    display: inline-block;
+    color: #eae0e0;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+ .footernav li a:hover {
+    color: rgb(246, 126, 67);
+  }
+.address pre{
+   color: rgb(225, 233, 239);
+   margin-top: 60px;
+   margin-left: 90px;
+}
+.email{
+    color: #f1eaea;
+    margin-top: 60px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 20px;
+    font-size: 30px;
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+}
+
+.last-footer hr{
+    margin-top: 400px;
+    margin-left: -1200px;
+    width: 1150px;
+    border: 1px solid gray;
+}
+.last-footer span{
+    color: rgb(172, 180, 188);
+    margin-top: 40px;
+    display: block;
+    margin-left: -1300px;
+}
+.last-footer  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: -30px;
+    margin-left: -300px
+  }
+  .last-footer  li a {
+    /* margin-left: -100px; */
+    display: flex;
+    color: rgb(188, 176, 176);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .last-footer  li a:hover{
+    color: rgb(189, 85, 44);
+  }  
